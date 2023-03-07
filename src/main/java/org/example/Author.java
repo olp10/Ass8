@@ -1,6 +1,6 @@
 package org.example;
 
-public abstract class User {
+public class Author {
     private String name;
 
     public String getName() {
@@ -11,7 +11,7 @@ public abstract class User {
         this.name = name;
     }
 
-    public User(String name) {
-
+    public Author(String name) {
+        this.name = name;
     }
 }

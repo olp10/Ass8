@@ -1,13 +1,5 @@
 package org.example;
 
-/***************************************************************************
- *  Nafn     : Ólafur Pálsson
- *  T-póstur : olp10@hi.is
- *
- *  Lýsing   :
- *
- *
- ****************************************************************************/
 public class Student extends User {
     private boolean feePaid;
 
