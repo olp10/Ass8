@@ -7,6 +7,8 @@ import java.util.List;
 public class LibrarySystem {
 
     private List<Lending> lendings = new ArrayList<Lending>();
+    private List<User> users = new ArrayList<User>();
+    private List<Book> books = new ArrayList<Book>();
     public LibrarySystem() {
     }
 
