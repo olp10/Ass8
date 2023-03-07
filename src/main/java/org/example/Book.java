@@ -23,7 +23,7 @@ public class Book {
         authors.add(new Author(authorName));
     }
 
-    public List<Author> getAuthors() {
+    public List<Author> getAuthors() throws EmptyAuthorListException{
         return authors;
     }
     public void setAuthors(List<Author> authors) {
