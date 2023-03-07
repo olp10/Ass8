@@ -3,7 +3,7 @@ package org.example;
 public class Author {
     private String name;
 
-    public String getName() {
+    public String getName() throws EmptyAuthorListException {
         return name;
     }
 

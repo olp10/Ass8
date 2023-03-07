@@ -14,7 +14,7 @@ public class Book {
     private List<Author> authors;
     private String title;
 
-    public Book(String title, List<Author> authors) {
+    public Book(String title, List<Author> authors) throws EmptyAuthorListException {
         this.title = title;
         this.authors = authors;
     }
@@ -23,7 +23,7 @@ public class Book {
         authors.add(new Author(authorName));
     }
 
-    public List<Author> getAuthors() {
+    public List<Author> getAuthors() throws EmptyAuthorListException{
         return authors;
     }
     public void setAuthors(List<Author> authors) {
