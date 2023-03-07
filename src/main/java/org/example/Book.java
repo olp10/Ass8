@@ -26,7 +26,7 @@ public class Book {
     public List<Author> getAuthors() throws EmptyAuthorListException{
         return authors;
     }
-    public void setAuthors(List<Author> authors) {
+    public void setAuthors(List<Author> authors) throws EmptyAuthorListException {
         this.authors = authors;
     }
 

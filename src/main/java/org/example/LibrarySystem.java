@@ -1,15 +1,19 @@
 package org.example;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class LibrarySystem {
+
+    private List<Lending> lendings = new ArrayList<Lending>();
     public LibrarySystem() {
     }
 
-    public void addBookWithTitleAndAuthorlist(String title, List<Author> authors) throws UserOrBookDoesNotExistException {
-
+    public void addBookWithTitleAndAuthorlist(String title, List<Author> authors) throws EmptyAuthorListException {
+        Book book = new Book(title, authors);
     }
+
     public void addStudentUser(String name, boolean feePaid) {
 
     }
@@ -24,15 +28,15 @@ public class LibrarySystem {
         return null;
     }
 
-    public void borrowBook(User user, Book book) {
+    public void borrowBook(User user, Book book) throws UserOrBookDoesNotExistException {
 
     }
 
-    public void extendLending(FacultyMember facultyMember, Book book, LocalDate newDueDate) {
+    public void extendLending(FacultyMember facultyMember, Book book, LocalDate newDueDate) throws UserOrBookDoesNotExistException {
 
     }
 
-    public void returnBook(User user, Book book) {
+    public void returnBook(User user, Book book) throws UserOrBookDoesNotExistException {
 
     }
 }
